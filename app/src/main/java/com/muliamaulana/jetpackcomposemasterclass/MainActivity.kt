@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.muliamaulana.jetpackcomposemasterclass.state_management.number_guess.NumberGuestScreenRoot
 import com.muliamaulana.jetpackcomposemasterclass.ui.theme.JetpackComposeMasterClassTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,8 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposeMasterClassTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    NumberGuestScreenRoot(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
